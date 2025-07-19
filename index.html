@@ -3,101 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prestige Sole Co.</title>
+  <title>Prestige Sole Co. - Exclusive Shoe Boutique</title>
   <style>
     body {
       margin: 0;
       font-family: 'Helvetica Neue', sans-serif;
-      background-color: #0e0e0e;
-      color: #f4f1e8;
+      background-color: #fff;
+      color: #333;
     }
 
     header {
-      background-color: #0e0e0e;
+      background-color: #222;
       padding: 2rem;
       text-align: center;
+      color: #fff;
     }
 
     .logo-img {
       max-width: 200px;
       margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin: 0;
+    nav {
+      background-color: #333;
+      padding: 1rem;
+      text-align: center;
     }
 
-    .tagline {
-      font-size: 1.25rem;
-      color: #cfcfcf;
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     main {
-      padding: 3rem 2rem;
-      max-width: 900px;
+      padding: 3rem;
+      max-width: 1200px;
       margin: auto;
       text-align: center;
     }
 
-    .highlight {
-      font-weight: 600;
-      color: #e3dfd0;
-    }
-
-    .logos-section {
+    .product-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
 
-    .logo-container {
-      background-color: #1c1c1c;
+    .product {
+      background-color: #fafafa;
       padding: 1rem;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.3s ease;
     }
 
-    .logo-container img {
-      max-width: 200px;
-      height: auto;
-      display: block;
-      margin: auto;
+    .product:hover {
+      transform: translateY(-10px);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      margin: 0.8rem 0;
+      font-size: 1.4rem;
+      color: #222;
+    }
+
+    .product p {
+      color: #555;
+    }
+
+    .price {
+      color: #000;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background-color: #222;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #555;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #999;
+      background-color: #222;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo1.png" alt="Prestige Sole Logo" class="logo-img" />
+    <img src="C2299E8F-3807-4B3D-AF19-BC80E984D50A.jpeg" alt="Prestige Sole Logo" class="logo-img" />
     <h1>Prestige Sole Co.</h1>
-    <p class="tagline">Where Luxury Meets the Sole</p>
+    <p class="tagline">Exclusive Shoe Boutique</p>
   </header>
 
-  <main>
-    <p>
-      Welcome to <span class="highlight">Prestige Sole</span> — your destination for exclusive, high-end sneakers. We curate the rarest drops, classic staples, and refined kicks for collectors who value quality, story, and timeless design.
-    </p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#collections">Collections</a>
+    <a href="#sale">Sale</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <div class="logos-section">
-      <div class="logo-container">
-        <img src="Vintage Prestige Sole Co. Logo.png" alt="Minimal Sneaker Outline Logo" />
+  <main>
+    <section class="product-grid">
+      <div class="product">
+        <img src="C2299E8F-3807-4B3D-AF19-BC80E984D50A.jpeg" alt="Classic Sneaker">
+        <h3>Classic Sneaker</h3>
+        <p>Timeless style and superior comfort.</p>
+        <p class="price">$250.00</p>
+        <a href="#" class="buy-btn">Shop Now</a>
       </div>
-      <div class="logo-container">
-        <img src="Vintage Prestige Sole Co. Logo.png" alt="Vintage Script Prestige Sole Logo" />
+
+      <div class="product">
+        <img src="C2299E8F-3807-4B3D-AF19-BC80E984D50A.jpeg" alt="Limited Edition Sneaker">
+        <h3>Limited Edition Sneaker</h3>
+        <p>Exclusive drop for true enthusiasts.</p>
+        <p class="price">$450.00</p>
+        <a href="#" class="buy-btn">Shop Now</a>
       </div>
-      <div class="logo-container">
-        <img src="Vintage Prestige Sole Co. Logo.png" alt="Mixed Prestige Sole Co Logo" />
+
+      <div class="product">
+        <img src="C2299E8F-3807-4B3D-AF19-BC80E984D50A.jpeg" alt="Sporty Elegance">
+        <h3>Sporty Elegance</h3>
+        <p>Luxury design meets daily wear.</p>
+        <p class="price">$300.00</p>
+        <a href="#" class="buy-btn">Shop Now</a>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer>
